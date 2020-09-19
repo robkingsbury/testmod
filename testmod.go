@@ -5,13 +5,23 @@ import (
 )
 
 type Fletch struct {
-	i int
+	times int
+	name  string
 }
 
-func New(i int) *Fletch {
-	return &Fletch{i: i}
+type Opts struct {
+	Times int
+	Name  string
+}
+
+func New(o Opts) *Fletch {
+	return &Fletch{
+		times: o.Times,
+		name:  o.Name,
+	}
 }
 
 func (f *Fletch) String() string {
-	return fmt.Sprintf("fletched %d times and stuff", f.i)
+	return fmt.Sprintf("fletched %d times for %s",
+		f.times, f.name)
 }
