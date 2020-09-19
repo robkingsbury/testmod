@@ -1,3 +1,4 @@
+// Package sys provides some pretty much useless system functions.
 package sys
 
 import (
