@@ -13,5 +13,5 @@ func New(i int) *Fletch {
 }
 
 func (f *Fletch) String() string {
-	return fmt.Sprintf("fletched %d times", f.i)
+	return fmt.Sprintf("fletched %d times and stuff", f.i)
 }
