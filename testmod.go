@@ -31,6 +31,5 @@ func New(o Opts) *Fletch {
 
 // String implements the Stringer interface.
 func (f *Fletch) String() string {
-	return fmt.Sprintf("fletched %d times for %s",
-		f.times, f.name)
+	return fmt.Sprintf("Fletched %d times for %s!", f.times, f.name)
 }

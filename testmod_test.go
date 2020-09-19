@@ -11,7 +11,7 @@ func TestString(t *testing.T) {
 		Times: 23,
 	}
 	f := New(o)
-	want := "fletched 23 times for Doug"
+	want := "Fletched 23 times for Doug!"
 
 	if got := fmt.Sprintf("%s", f); got != want {
 		t.Errorf("got %q, want %q", got, want)
