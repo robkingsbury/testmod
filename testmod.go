@@ -17,7 +17,7 @@ type Opts struct {
 	// Times is the number of times something has been fletched.
 	Times int
 
-	// Name is the identifying for the thing being fletched.
+	// Name is the identifier for the thing being fletched.
 	Name string
 }
 
